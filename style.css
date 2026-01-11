@@ -1,0 +1,916 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+/* Loading Screen */
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.logo-placeholder {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+}
+
+.header h1 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    font-size: 1rem;
+}
+
+/* Cards */
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+/* Search Section */
+.search-section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.search-box button {
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.search-box button:hover {
+    background: linear-gradient(135deg, #2980b9, #1f639b);
+    transform: scale(1.05);
+}
+
+.info-note {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Student Card */
+.student-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn-pdf {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s ease;
+}
+
+.btn-pdf:hover {
+    transform: scale(1.05);
+}
+
+.student-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.info-item {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #3498db;
+}
+
+.info-item.highlight {
+    background: #e3f2fd;
+    border-left-color: #e74c3c;
+}
+
+.info-label {
+    font-weight: 600;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info-value {
+    color: #34495e;
+    font-size: 1.1rem;
+}
+
+/* Marks Table */
+.marks-table-container {
+    margin-top: 20px;
+}
+
+.marks-table-container h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.marks-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.marks-table thead {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+}
+
+.marks-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.marks-table tbody tr {
+    border-bottom: 1px solid #eee;
+    transition: background 0.3s ease;
+}
+
+.marks-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.marks-table td {
+    padding: 15px;
+}
+
+/* Congratulations Message */
+.congratulations-message {
+    background: linear-gradient(135deg, #ffd700, #ffed4e, #fff9c4);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 25px 0;
+    border: 3px solid #ffc107;
+    box-shadow: 0 10px 30px rgba(255, 193, 7, 0.3);
+    animation: slideInDown 0.6s ease;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.congratulations-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.congratulations-icon {
+    font-size: 3rem;
+    color: #ff9800;
+    display: flex;
+    gap: 10px;
+}
+
+.congratulations-icon i {
+    animation: bounce 2s infinite;
+}
+
+.congratulations-icon i:nth-child(2) {
+    animation-delay: 0.2s;
+    color: #ff5722;
+}
+
+.congratulations-icon i:nth-child(3) {
+    animation-delay: 0.4s;
+    color: #4caf50;
+}
+
+.congratulations-text {
+    flex: 1;
+    text-align: center;
+}
+
+.congratulations-text h3 {
+    color: #e65100;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    animation: pulse 2s infinite;
+}
+
+.congratulations-text p {
+    color: #5d4037;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.congratulations-text .sub-message {
+    font-size: 1rem;
+    color: #8d6e63;
+    font-style: italic;
+}
+
+.confetti {
+    font-size: 1.5rem;
+    color: rgba(255, 87, 34, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.confetti i {
+    animation: float 3s infinite;
+}
+
+.confetti i:nth-child(2) {
+    animation-delay: 0.5s;
+    color: rgba(76, 175, 80, 0.5);
+}
+
+.confetti i:nth-child(3) {
+    animation-delay: 1s;
+    color: rgba(33, 150, 243, 0.5);
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes float {
+    0%, 100% { 
+        transform: translateY(0) rotate(0deg); 
+        opacity: 0.5;
+    }
+    50% { 
+        transform: translateY(-20px) rotate(180deg); 
+        opacity: 1;
+    }
+}
+
+/* Tabs */
+.tabs-container {
+    margin: 30px 0;
+}
+
+.tabs {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.tab {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    background: none;
+    color: #7f8c8d;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.tab.active {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Charts */
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.chart-card.full-width {
+    grid-column: 1 / -1;
+}
+
+.chart-card h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chart-description {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.chart-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+.chart-insight {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e3f2fd;
+    border-radius: 10px;
+    border-left: 4px solid #3498db;
+}
+
+/* Leaderboard */
+.leaderboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.leaderboard-item {
+    background: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-left: 4px solid #f1c40f;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.leaderboard-item:hover {
+    background: #e3f2fd;
+    transform: translateX(5px);
+}
+
+.leaderboard-item.rank-1 {
+    border-left-color: #ffd700;
+    background: linear-gradient(135deg, #fff9e6, #fff3cc);
+}
+
+.leaderboard-item.rank-2 {
+    border-left-color: #c0c0c0;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.leaderboard-item.rank-3 {
+    border-left-color: #cd7f32;
+    background: linear-gradient(135deg, #fdf2e9, #fae5d3);
+}
+
+.rank-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rank-number {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.rank-marks {
+    font-size: 1.1rem;
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+.rank-count {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.rank-students {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    display: none;
+}
+
+.student-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.student-item {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-left: 3px solid #3498db;
+}
+
+.student-item.current {
+    background: #e3f2fd;
+    border-left-color: #3498db;
+}
+
+.you-badge {
+    background: #3498db;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    margin-left: 8px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 25px;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-top: 30px;
+}
+
+.footer-note {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* ==================== PDF STYLES ==================== */
+
+#pdfContainer {
+    width: 794px; /* A4 width in pixels at 96dpi */
+    background: white;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    border: none;
+}
+
+.marksheet {
+    width: 100%;
+    padding: 40px;
+    font-family: 'Times New Roman', Times, serif; /* Better for PDF */
+    color: #000;
+    background: white;
+    box-sizing: border-box;
+}
+
+/* Marksheet Header */
+.marksheet-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #000;
+}
+
+.marksheet-header .logo-placeholder {
+    width: 80px;
+    height: 80px;
+    background: #2c3e50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: 40px;
+}
+
+.school-info h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+}
+
+.school-info h2 {
+    font-size: 22px;
+    font-weight: normal;
+    color: #333;
+    margin: 0;
+}
+
+/* Student Information */
+.marksheet-student-info {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.marksheet-student-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 15px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #000;
+}
+
+.marksheet-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.marksheet-table td {
+    padding: 8px 0;
+    font-size: 15px;
+    vertical-align: top;
+}
+
+.marksheet-table td:first-child {
+    width: 120px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Marks Table */
+.marksheet-marks {
+    margin-bottom: 40px;
+}
+
+.marksheet-marks h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 15px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #000;
+}
+
+.marksheet-marks-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #000;
+    margin-top: 10px;
+}
+
+.marksheet-marks-table thead {
+    background: #f0f0f0;
+}
+
+.marksheet-marks-table th {
+    padding: 12px 10px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #000;
+    font-size: 14px;
+    background: #2c3e50;
+    color: white;
+}
+
+.marksheet-marks-table td {
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Adjust column widths for A4 */
+.marksheet-marks-table th:nth-child(1),
+.marksheet-marks-table td:nth-child(1) {
+    width: 40%; /* Subject */
+    text-align: left;
+}
+
+.marksheet-marks-table th:nth-child(2),
+.marksheet-marks-table td:nth-child(2) {
+    width: 20%; /* Marks Obtained */
+}
+
+.marksheet-marks-table th:nth-child(3),
+.marksheet-marks-table td:nth-child(3) {
+    width: 20%; /* Maximum Marks */
+}
+
+.marksheet-marks-table th:nth-child(4),
+.marksheet-marks-table td:nth-child(4) {
+    width: 20%; /* Percentage */
+}
+
+.marksheet-marks-table tfoot {
+    background: #f0f0f0;
+    font-weight: bold;
+}
+
+.marksheet-marks-table tfoot td {
+    background: #e8e8e8;
+}
+
+.result-status {
+    background: #f8f8f8;
+    font-size: 16px;
+    color: #000;
+}
+
+/* Footer */
+.marksheet-footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+}
+
+.marksheet-footer p {
+    margin: 5px 0;
+}
+
+.disclaimer {
+    font-style: italic;
+    margin-top: 10px;
+    color: #777;
+    font-size: 12px;
+}
+
+/* ==================== PRINT STYLES ==================== */
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        background: white;
+    }
+    
+    #pdfContainer {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        border: none;
+    }
+    
+    .marksheet {
+        padding: 20mm; /* Standard A4 margins */
+        margin: 0;
+        box-shadow: none;
+        border: none;
+    }
+    
+    /* Hide everything except PDF */
+    body * {
+        visibility: hidden;
+    }
+    
+    #pdfContainer,
+    #pdfContainer * {
+        visibility: visible;
+    }
+    
+    /* Force page breaks if needed */
+    .marksheet {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+    
+    .marksheet-marks-table {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+}
+
+/* ==================== OPTIMIZED FOR HTML2PDF ==================== */
+
+/* These styles help html2pdf.js render correctly */
+#pdfContainer {
+    position: static !important;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+}
+
+/* Remove any shadows/animations for PDF */
+.marksheet {
+    box-shadow: none !important;
+    animation: none !important;
+    transition: none !important;
+}
+
+/* Ensure all text is visible */
+.marksheet * {
+    color: #000 !important;
+    background: white !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Fix for borders */
+.marksheet-marks-table,
+.marksheet-marks-table th,
+.marksheet-marks-table td {
+    border-color: #000 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .header h1 {
+        font-size: 1.4rem;
+    }
+    
+    .search-box {
+        flex-direction: column;
+    }
+    
+    .student-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .tabs {
+        flex-direction: column;
+    }
+    
+    .chart-container {
+        height: 250px;
+    }
+    
+    .marksheet {
+        padding: 20px;
+    }
+    
+    .congratulations-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .congratulations-icon {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .student-info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .marks-table th, .marks-table td {
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+}

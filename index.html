@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAKSHIN DINAJPUR MEDHA ANNESHAN 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading">
+        <div class="loader"></div>
+        <p>Loading student data...</p>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container" id="mainContainer">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo-placeholder">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h1>DAKSHIN DINAJPUR MEDHA ANNESHAN 2025</h1>
+            </div>
+            <p class="subtitle">This portal is build by RM DIGITAL WORKS </p>
+        </header>
+
+        <!-- Search Section -->
+        <section class="search-section card">
+            <h2><i class="fas fa-search"></i> Check Your Result</h2>
+            <div class="search-box">
+                <input type="text" id="rollNumber" placeholder="Enter your Roll Number (e.g., BLG66001)" maxlength="10">
+                <button id="searchBtn">
+                    <i class="fas fa-check"></i> Get Result
+                </button>
+            </div>
+            <p class="info-note">
+                <i class="fas fa-info-circle"></i> Enter your roll number exactly as provided
+            </p>
+        </section>
+
+        <!-- Student Info Card -->
+        <section class="student-card card" id="studentCard" style="display: none;">
+            <div class="student-header">
+                <h2><i class="fas fa-user-graduate"></i> Student Details</h2>
+                <button id="downloadPdfBtn" class="btn-pdf">
+                    <i class="fas fa-download"></i> Download Marksheet
+                </button>
+            </div>
+            
+            <div class="student-info-grid">
+                <div class="info-item">
+                    <span class="info-label">Name:</span>
+                    <span class="info-value" id="studentName">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Roll No:</span>
+                    <span class="info-value" id="studentRoll">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Class:</span>
+                    <span class="info-value" id="studentClass">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">School:</span>
+                    <span class="info-value" id="studentSchool">-</span>
+                </div>
+                <div class="info-item highlight">
+                    <span class="info-label">Total Marks:</span>
+                    <span class="info-value" id="studentTotal">-</span>
+                </div>
+                <div class="info-item highlight">
+                    <span class="info-label">Result:</span>
+                    <span class="info-value" id="studentResult">-</span>
+                </div>
+            </div>
+
+            <!-- Marks Table -->
+            <div class="marks-table-container">
+                <h3><i class="fas fa-table"></i> Subject-wise Marks</h3>
+                <table class="marks-table">
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Marks</th>
+                            <th>Out of 25</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody id="marksTableBody">
+                        <!-- Marks will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Congratulations Message (Dynamic) -->
+        <div id="congratulationsContainer" style="display: none;"></div>
+
+        <!-- Tabs for Charts and Leaderboard -->
+        <div class="tabs-container">
+            <div class="tabs">
+                <button class="tab active" data-tab="charts">
+                    <i class="fas fa-chart-bar"></i> Analytics
+                </button>
+                <button class="tab" data-tab="leaderboard">
+                    <i class="fas fa-trophy"></i> Leaderboard
+                </button>
+                <button class="tab" data-tab="distribution">
+                    <i class="fas fa-chart-line"></i> Distribution
+                </button>
+            </div>
+        </div>
+
+        <!-- Charts Tab Content -->
+        <section class="tab-content active" id="chartsTab">
+            <div class="charts-grid">
+                <!-- Chart 1: Subject Performance -->
+                <div class="chart-card card">
+                    <h3><i class="fas fa-book"></i> Subject Performance</h3>
+                    <p class="chart-description">Your marks vs class average</p>
+                    <div class="chart-container">
+                        <canvas id="subjectChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Chart 2: Contribution to Total -->
+                <div class="chart-card card">
+                    <h3><i class="fas fa-chart-pie"></i> Subject Contribution</h3>
+                    <p class="chart-description">How each subject contributed to your total</p>
+                    <div class="chart-container">
+                        <canvas id="contributionChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leaderboard Tab Content -->
+        <section class="tab-content" id="leaderboardTab">
+            <div class="leaderboard-container card">
+                <h3><i class="fas fa-crown"></i> Class Leaderboard</h3>
+                <p class="chart-description">Top performers in your class</p>
+                
+                <div class="leaderboard" id="leaderboardList">
+                    <!-- Leaderboard will be inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Distribution Tab Content -->
+        <section class="tab-content" id="distributionTab">
+            <div class="charts-grid">
+                <!-- Chart 3: Score Distribution -->
+                <div class="chart-card card full-width">
+                    <h3><i class="fas fa-chart-histogram"></i> Score Distribution</h3>
+                    <p class="chart-description">How all students performed overall</p>
+                    <div class="chart-container">
+                        <canvas id="distributionChart"></canvas>
+                    </div>
+                    <div class="chart-insight" id="distributionInsight">
+                        <!-- Insight text will appear here -->
+                    </div>
+                </div>
+
+                <!-- Chart 4: Marks Density -->
+                <div class="chart-card card full-width">
+                    <h3><i class="fas fa-wave-square"></i> Marks Density</h3>
+                    <p class="chart-description">How many students got each mark</p>
+                    <div class="chart-container">
+                        <canvas id="densityChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PDF Container (Hidden) -->
+        <div id="pdfContainer" style="display: none;">
+            <div class="marksheet">
+                <div class="marksheet-header">
+                    <div class="logo-placeholder">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="school-info">
+                        <h1>DAKSHIN DINAJPUR ZILA MEDHA ANNESHAN 2025</h1>
+                        <h2>Organized by Sister Nivedita Welfare Foundation </h2>
+                        <h2>Student Result Marksheet</h2>
+                    </div>
+                </div>
+                
+                <div class="marksheet-student-info">
+                    <h3>Student Information</h3>
+                    <table class="marksheet-table">
+                        <tr>
+                            <td><strong>Name:</strong> <span id="pdfName"></span></td>
+                            <td><strong>Roll No:</strong> <span id="pdfRoll"></span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Class:</strong> <span id="pdfClass"></span></td>
+                            <td><strong>School:</strong> <span id="pdfSchool"></span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total Marks:</strong> <span id="pdfTotal"></span>/100</td>
+                            <td><strong>Rank:</strong> <span id="pdfRank"></span></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="marksheet-marks">
+                    <h3>Subject-wise Marks</h3>
+                    <table class="marksheet-marks-table">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Marks Obtained</th>
+                                <th>Maximum Marks</th>
+                                <th>Percentage</th>
+                            </tr>
+                        </thead>
+                        <tbody id="pdfMarksBody">
+                            <!-- PDF marks will be inserted here -->
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td><strong>Total</strong></td>
+                                <td><strong><span id="pdfTotal"></span></strong></td>
+                                <td><strong>100</strong></td>
+                                <td><strong><span id="pdfPercentage"></span>%</strong></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="result-status">
+                                    <strong>Result:</strong> <span id="pdfResult"></span>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <div class="marksheet-footer">
+                    <p><strong>Date Generated:</strong> <span id="pdfDate"></span></p>
+                    <p class="disclaimer">This is a computer-generated document. No signature required.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 Build by RM DIGITAL WORKS </p>
+            <p class="footer-note">
+                <i class="fas fa-shield-alt"></i> CONTACT: 9064651620
+            </p>
+        </footer>
+    </div>
+
+    <script type="module" src="/src/app.js"></script>
+</body>
+</html>
