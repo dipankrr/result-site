@@ -323,35 +323,40 @@ export function downloadMarksheetPDF(student, leaderboardData) {
     // CREATE REAL MARKSHEET NODE
     const wrapper = document.createElement('div');
     wrapper.innerHTML = `
-        <style>${getStyles()}</style>
+    <style>${getStyles()}</style>
+    <div class="pdf-mode">
         ${getMarksheetBody(student, leaderboardData)}
-    `;
+    </div>
+`;
 
-    const marksheet = wrapper.querySelector('.marksheet');
 
-    // IMPORTANT: attach REAL node to DOM
-    pdfRoot.appendChild(marksheet);
+    pdfRoot.appendChild(wrapper);
+    wrapper.getBoundingClientRect();
 
-    // FORCE LAYOUT
-    marksheet.getBoundingClientRect();
+    wrapper.style.width = '780px'; //try 794
+    wrapper.style.margin = '0 auto';
+    wrapper.style.background = '#fff';
 
-    html2pdf()
-        .set({
-            filename: `Marksheet_${student.ROLL}.pdf`,
-            margin: 5,
-            image: { type: 'jpeg', quality: 1 },
-            html2canvas: {
-                scale: 2,
-                backgroundColor: '#ffffff',
-                useCORS: true
-            },
-            jsPDF: {
-                unit: 'mm',
-                format: 'a4',
-                orientation: 'portrait'
-            }
-        })
-        .from(marksheet)
+
+        html2pdf().set({
+        filename: `Marksheet_${student.ROLL}.pdf`,
+        margin: 0,
+        image: { type: 'jpeg', quality: 1 },
+        html2canvas: {
+            scale: 2,
+            backgroundColor: '#ffffff',
+            useCORS: true,
+            scrollX: 0,
+            scrollY: 0,
+            windowWidth: 780, //try 794
+        },
+        jsPDF: {
+            unit: 'mm',
+            format: 'a4',
+            orientation: 'portrait'
+        }
+    })
+        .from(wrapper)
         .save()
         .then(() => {
             pdfRoot.innerHTML = '';

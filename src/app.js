@@ -45,12 +45,19 @@ function setupEventListeners() {
         });
     });
     
-    // PDF download
-    document.getElementById('downloadPdfBtn').addEventListener('click', () => {
+    // PDF print
+    document.getElementById('printPdfBtn').addEventListener('click', () => {
     if (currentStudent) {
-        downloadMarksheetPDF(currentStudent, leaderboardData); // ← Add leaderboardData
+        printMarksheet(currentStudent, leaderboardData); // ← Add leaderboardData
     }
 });
+
+    // PDF download
+        document.getElementById('downloadPdfBtn').addEventListener('click', () => {
+        if (currentStudent) {
+            downloadMarksheetPDF(currentStudent, leaderboardData); // ← Add leaderboardData
+        }
+    });
 }
 
 function handleSearch() {

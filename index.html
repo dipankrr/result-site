@@ -101,10 +101,10 @@
             <div class="download-section">
                 <div class="button-group">
                     <button id="printPdfBtn" class="btn-pdf btn-print">
-                        <i class="fas fa-print"></i> Print Marksheet
+                        <i class="fas fa-print"></i> Print PDF
                     </button>
                     <button id="downloadPdfBtn" class="btn-pdf btn-download">
-                        <i class="fas fa-download"></i> Download Marksheet
+                        <i class="fas fa-download"></i> Download PDF
                     </button>
                 </div>
             </div>
@@ -117,7 +117,7 @@
                     <i class="fas fa-chart-bar"></i> Analytics
                 </button>
                 <button class="tab active" data-tab="leaderboard">
-                    <i class="fas fa-trophy"></i> Leaderboard
+                    <i class="fas fa-trophy"></i> Ranks
                 </button>
                 <button class="tab" data-tab="distribution">
                     <i class="fas fa-chart-line"></i> Distribution
@@ -263,6 +263,16 @@
             </p>
         </footer>
     </div>
+    <div id="pdf-root"
+     style="
+        position: fixed;
+        inset: 0;
+        opacity: 0;
+        pointer-events: none;
+        background: white;
+        z-index: -1;
+     ">
+</div>
 
     <script type="module" src="/src/app.js"></script>
 </body>
