@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
 </head>
 <body>
     <!-- Loading Screen -->
@@ -43,13 +44,13 @@
             </p>
         </section>
 
+        <!-- Congratulations Message (Dynamic) -->
+        <div id="congratulationsContainer" style="display: none;"></div>
+
         <!-- Student Info Card -->
         <section class="student-card card" id="studentCard" style="display: none;">
             <div class="student-header">
                 <h2><i class="fas fa-user-graduate"></i> Student Details</h2>
-                <button id="downloadPdfBtn" class="btn-pdf">
-                    <i class="fas fa-download"></i> Download Marksheet
-                </button>
             </div>
             
             <div class="student-info-grid">
@@ -96,18 +97,26 @@
                     </tbody>
                 </table>
             </div>
+            
+            <div class="download-section">
+                <div class="button-group">
+                    <button id="printPdfBtn" class="btn-pdf btn-print">
+                        <i class="fas fa-print"></i> Print Marksheet
+                    </button>
+                    <button id="downloadPdfBtn" class="btn-pdf btn-download">
+                        <i class="fas fa-download"></i> Download Marksheet
+                    </button>
+                </div>
+            </div>
         </section>
-
-        <!-- Congratulations Message (Dynamic) -->
-        <div id="congratulationsContainer" style="display: none;"></div>
 
         <!-- Tabs for Charts and Leaderboard -->
         <div class="tabs-container">
             <div class="tabs">
-                <button class="tab active" data-tab="charts">
+                <button class="tab" data-tab="charts">
                     <i class="fas fa-chart-bar"></i> Analytics
                 </button>
-                <button class="tab" data-tab="leaderboard">
+                <button class="tab active" data-tab="leaderboard">
                     <i class="fas fa-trophy"></i> Leaderboard
                 </button>
                 <button class="tab" data-tab="distribution">
@@ -117,7 +126,7 @@
         </div>
 
         <!-- Charts Tab Content -->
-        <section class="tab-content active" id="chartsTab">
+        <section class="tab-content" id="chartsTab">
             <div class="charts-grid">
                 <!-- Chart 1: Subject Performance -->
                 <div class="chart-card card">
@@ -140,7 +149,7 @@
         </section>
 
         <!-- Leaderboard Tab Content -->
-        <section class="tab-content" id="leaderboardTab">
+        <section class="tab-content active" id="leaderboardTab">
             <div class="leaderboard-container card">
                 <h3><i class="fas fa-crown"></i> Class Leaderboard</h3>
                 <p class="chart-description">Top performers in your class</p>

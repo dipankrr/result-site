@@ -196,6 +196,14 @@ body {
     transform: scale(1.05);
 }
 
+.download-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+}
+
 .student-info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -816,10 +824,16 @@ body {
         break-inside: avoid;
     }
     
-    .marksheet-marks-table {
-        page-break-inside: avoid;
-        break-inside: avoid;
+    .marksheet-marks-table th {
+    background: #2c3e50 !important;
+    color: white !important;
+}
+
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
     }
+
 }
 
 /* ==================== OPTIMIZED FOR HTML2PDF ==================== */
@@ -840,12 +854,11 @@ body {
 }
 
 /* Ensure all text is visible */
-.marksheet * {
-    color: #000 !important;
-    background: white !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+.marksheet {
+    color: #000;
+    background: white;
 }
+
 
 /* Fix for borders */
 .marksheet-marks-table,

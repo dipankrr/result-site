@@ -1,7 +1,7 @@
 import { loadStudentData, computeStatistics, loadLeaderboardData } from './utils.js';
 import { createCharts, destroyCharts } from './charts.js';
 import { updateLeaderboard } from './leaderboard.js';
-import { updatePDFContent, generatePDF } from './pdf.js';
+import { updatePDFContent, downloadMarksheetPDF, printMarksheet } from './pdf_service.js';
 
 let studentData = {};
 let computedData = {};
@@ -48,7 +48,7 @@ function setupEventListeners() {
     // PDF download
     document.getElementById('downloadPdfBtn').addEventListener('click', () => {
     if (currentStudent) {
-        generatePDF(currentStudent, leaderboardData); // ← Add leaderboardData
+        downloadMarksheetPDF(currentStudent, leaderboardData); // ← Add leaderboardData
     }
 });
 }
@@ -81,8 +81,8 @@ function handleSearch() {
     // Update leaderboard
     updateLeaderboard(currentStudent, leaderboardData);
     
-    // Switch to charts tab
-    switchTab('charts');
+    // Switch to leaderboard tab
+    switchTab('leaderboard');
     
     // Scroll to student card
     document.getElementById('studentCard').scrollIntoView({ behavior: 'smooth' });
