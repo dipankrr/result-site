@@ -433,7 +433,7 @@ body {
     position: relative;
     background: linear-gradient(135deg, #6b2c1a, #8b3a1f, #6b2c1a);
     color: #fff;
-    padding: 28px 30px;
+    padding: 20px 22px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -445,7 +445,7 @@ body {
 }
 
 .header-text h1 {
-    font-size: 28px;
+    font-size: 23px;
     font-weight: 700;
     margin: 0;
 
@@ -472,9 +472,9 @@ body {
 }
 
 .header-text h2 {
-    font-size: 20px;
+    font-size: 18px;
     margin: 2px 0;
-    font-weight: 600;
+    font-weight: 450;
     color: #ffd966;
 }
 
@@ -550,7 +550,8 @@ th {
 
 td {
     padding: 14px;
-    border-bottom: 1px solid #eee;
+    border: 1px solid #000000;
+
     font-size: 20px;      /* ⬅ increase size */
     font-weight: 600;    /* ⬅ bolder digits & text */
 }
@@ -635,7 +636,7 @@ function getMarksheetBody(student, leaderboardData) {
         const classBoard = leaderboardData[student.CLASS] || {};
         for (const rank in classBoard) {
             if (classBoard[rank].some(s => s.name === student.NAME)) {
-                studentRank = `Rank ${rank}`;
+                studentRank = `${rank}`;
                 break;
             }
         }
@@ -652,6 +653,8 @@ function getMarksheetBody(student, leaderboardData) {
         <h3>ORGANISED BY</h3>
         <h2>SISTER NIVEDITA WELFARE FOUNDATION</h2>
         <p>GOVT. REGD. NO : UDYAM-WB-19-0024504</p>
+        <centre>ডিটল হাট, বংশীহারি, দ:দিনাজপুর, ৭৩৩১২১ <p>
+        Phone No: 9614233213/ 98005 30276</centre>
     </div>
 
     <img class="header-logo right" src="${RIGHT_LOGO}" />
@@ -713,9 +716,15 @@ function getMarksheetBody(student, leaderboardData) {
 </div>
 
     <div class="footer">
-        <p>Generated on ${new Date().toLocaleString('en-IN')}</p>
-        <p>Developed by RM DIGITAL WORKS | 9735868805</p>
-    </div>
+    <p>Generated on ${new Date().toLocaleString('en-IN')}</p>
+    <p>
+        Developed by RM DIGITAL WORKS |
+        <a href="tel:9735868805">9735868805</a> /
+        <a href="tel:9064651620">9064651620</a> |
+        <a href="https://wa.me/919735868805">Contact us</a>
+    </p>
+</div>
+
 
 </div>
 `;
