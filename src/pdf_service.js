@@ -291,6 +291,14 @@
 ========================================================= */
 
 
+const LEFT_LOGO = '/assets/medha.png';
+const RIGHT_LOGO = '/assets/nivedita.jpeg';
+const WATERMARK_LOGO = 'assets/medha.png';
+const PRESIDENT_SIGN = '/assets/president-sign.png';
+const SECRETARY_SIGN = '/assets/secretary-sign.png';
+
+
+
 /* ===================== PRINT ===================== */
 
 export function printMarksheet(student, leaderboardData) {
@@ -313,7 +321,7 @@ export function printMarksheet(student, leaderboardData) {
 export function downloadMarksheetPDF(student, leaderboardData) {
     if (!student) {
         alert('Please search for a student first');
-        return;
+        return Promise.reject('No student');
     }
 
     const pdfRoot = document.getElementById('pdf-root');
@@ -333,29 +341,32 @@ export function downloadMarksheetPDF(student, leaderboardData) {
     pdfRoot.appendChild(wrapper);
     wrapper.getBoundingClientRect();
 
-    wrapper.style.width = '780px'; //try 794
+    //wrapper.style.width = '794px'; //try 794/780
     wrapper.style.margin = '0 auto';
     wrapper.style.background = '#fff';
 
 
-        html2pdf().set({
-        filename: `Marksheet_${student.ROLL}.pdf`,
-        margin: 0,
-        image: { type: 'jpeg', quality: 1 },
-        html2canvas: {
-            scale: 2,
-            backgroundColor: '#ffffff',
-            useCORS: true,
-            scrollX: 0,
-            scrollY: 0,
-            windowWidth: 780, //try 794
-        },
-        jsPDF: {
-            unit: 'mm',
-            format: 'a4',
-            orientation: 'portrait'
-        }
-    })
+    return html2pdf().set({
+            filename: `Marksheet_${student.ROLL}.pdf`,
+            margin: [0, 0, 0, 0],
+            image: { type: 'jpeg', quality: 1 },
+
+            html2canvas: {
+                scale: 2,
+                backgroundColor: '#ffffff',
+                useCORS: true,
+                scrollX: 0,
+                scrollY: 0,
+                windowWidth: 210 * 3.78, // EXACT A4 width in px
+            },
+
+            jsPDF: {
+                unit: 'mm',
+                format: 'a4',
+                orientation: 'portrait'
+            }
+        })
+
         .from(wrapper)
         .save()
         .then(() => {
@@ -402,41 +413,113 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #ffffff;
     margin: 0;
-    padding: 30px;
+    padding: 10px;
     color: #2c3e50;
 }
 
 .marksheet {
-    width: 794px;
-    margin: auto;
+    width: 210mm;
+    margin: 0 auto;
     background: #fff;
     border-radius: 14px;
     overflow: hidden;
+
+    position: relative;   /* ⬅ REQUIRED */
 }
+
 
 /* HEADER */
 .header {
-    background: linear-gradient(135deg, #1d2671, #c33764);
-    color: white;
-    padding: 30px;
+    position: relative;
+    background: linear-gradient(135deg, #6b2c1a, #8b3a1f, #6b2c1a);
+    color: #fff;
+    padding: 28px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-text {
     text-align: center;
+    flex: 1;
 }
 
-.header h1 {
+.header-text h1 {
+    font-size: 28px;
+    font-weight: 700;
     margin: 0;
-    font-size: 26px;
+
+    /* FORCE WHITE TEXT (canvas-safe) */
+    color: #ffd966 !important;
+    fill: #ffd966;
+
+    /* BLACK STROKE (canvas-safe method) */
+    text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+
+    /* VERY IMPORTANT */
+    letter-spacing: 0;
 }
 
-.header h2 {
-    font-size: 15px;
-    font-weight: 300;
-    margin-top: 8px;
+
+.header-text h3 {
+    font-size: 14px;
+    margin: 6px 0 2px;
+    font-weight: 400;
 }
 
-.header .logo {
-    font-size: 48px;
-    margin-bottom: 10px;
+.header-text h2 {
+    font-size: 20px;
+    margin: 2px 0;
+    font-weight: 600;
+    color: #ffd966;
 }
+
+.header-text p {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.header-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.header-logo.left { margin-right: 10px; }
+.header-logo.right { margin-left: 10px; }
+
+/* WATERMARK */
+.watermark {
+    position: absolute;
+    top: 55%;      /* move it slightly down */
+    left: 50%;     /* horizontal center */
+    transform: translateX(-50%);  /* only shift horizontally, no vertical transform */
+    
+    opacity: 0.06;
+    z-index: 0;
+    pointer-events: none;
+    display: block; /* safer for PDF rendering */
+}
+
+.watermark img {
+    width: 300px; /* or smaller if needed */
+}
+
+
+
+/* Ensure content stays above watermark */
+.info, table, .result, .footer {
+    position: relative;
+    z-index: 1;
+}
+
 
 /* INFO */
 .info {
@@ -448,8 +531,8 @@ body {
     border-bottom: 1px solid #eee;
 }
 
-.info div { font-size: 14px; }
-.info span { font-weight: 600; color: #000; }
+.info div { font-size: 18px; }
+.info span { font-weight: 700; color: #000; }
 
 /* TABLE */
 table {
@@ -461,15 +544,17 @@ th {
     background: #1d2671;
     color: white;
     padding: 14px;
-    font-size: 14px;
+    font-size: 18px;
     text-align: left;
 }
 
 td {
     padding: 14px;
     border-bottom: 1px solid #eee;
-    font-size: 14px;
+    font-size: 20px;      /* ⬅ increase size */
+    font-weight: 600;    /* ⬅ bolder digits & text */
 }
+
 
 /* BAR */
 .bar {
@@ -484,7 +569,7 @@ td {
     display: block;
     height: 100%;
     background: linear-gradient(90deg, #1d2671, #c33764);
-}
+}87
 
 /* TOTAL */
 .total-row {
@@ -495,7 +580,7 @@ td {
 /* RESULT */
 .result {
     text-align: center;
-    padding: 25px;
+    padding: 15px 0; /* reduced from 25px */
     font-size: 18px;
 }
 
@@ -505,11 +590,38 @@ td {
 /* FOOTER */
 .footer {
     text-align: center;
-    padding: 20px;
+    10px 0;  /* reduced from 20px */
     font-size: 12px;
     color: #777;
     background: #fafafa;
 }
+
+/* SIGNATURES */
+.signatures {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px 30px 5px; /* smaller than 30px 40px 10px */
+    margin-top: 0px;       /* reduced from 20px */
+}
+
+.sign {
+    text-align: center;
+}
+
+.sign img {
+    height: 30px;
+    object-fit: contain;
+}
+
+.sign-label {
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+
+
 `;
 }
 
@@ -523,7 +635,7 @@ function getMarksheetBody(student, leaderboardData) {
         const classBoard = leaderboardData[student.CLASS] || {};
         for (const rank in classBoard) {
             if (classBoard[rank].some(s => s.name === student.NAME)) {
-                studentRank = `Rank #${rank}`;
+                studentRank = `Rank ${rank}`;
                 break;
             }
         }
@@ -533,11 +645,22 @@ function getMarksheetBody(student, leaderboardData) {
 <div class="marksheet">
 
     <div class="header">
-        <div class="logo">🎓</div>
-        <h1>দক্ষিণ দিনাজপুর জেলা মেধা অন্নেষণ 2025</h1>
-        <h2>Sister Nivedita Welfare Foundation</h2>
-        <h2>Govt. Regd. UDYAM-WB-19-0024504</h2>
+    <img class="header-logo left" src="${LEFT_LOGO}" />
+    
+    <div class="header-text">
+        <h1>দক্ষিণ দিনাজপুর জেলা মেধা অন্নেষণ ২০২৫</h1>
+        <h3>ORGANISED BY</h3>
+        <h2>SISTER NIVEDITA WELFARE FOUNDATION</h2>
+        <p>GOVT. REGD. NO : UDYAM-WB-19-0024504</p>
     </div>
+
+    <img class="header-logo right" src="${RIGHT_LOGO}" />
+</div>
+
+    <div class="watermark">
+    <img src="${WATERMARK_LOGO}" />
+</div>
+
 
     <div class="info">
         <div><span>Name:</span> ${student.NAME}</div>
@@ -576,6 +699,18 @@ function getMarksheetBody(student, leaderboardData) {
             ${student.TOTAL >= 50 ? 'PASS' : 'FAIL'}
         </span>
     </div>
+
+    <div class="signatures">
+    <div class="sign left">
+        <img src="${PRESIDENT_SIGN}" />
+        <div class="sign-label">President</div>
+    </div>
+
+    <div class="sign right">
+        <img src="${SECRETARY_SIGN}" />
+        <div class="sign-label">Secretary</div>
+    </div>
+</div>
 
     <div class="footer">
         <p>Generated on ${new Date().toLocaleString('en-IN')}</p>

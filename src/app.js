@@ -53,9 +53,21 @@ function setupEventListeners() {
 });
 
     // PDF download
-        document.getElementById('downloadPdfBtn').addEventListener('click', () => {
-        if (currentStudent) {
-            downloadMarksheetPDF(currentStudent, leaderboardData); // ← Add leaderboardData
+        document.getElementById('downloadPdfBtn').addEventListener('click', async () => {
+        if (!currentStudent) return;
+        
+        const btn = document.getElementById('downloadPdfBtn');
+        const originalHTML = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generating...';
+        btn.disabled = true;
+        
+        try {
+            await downloadMarksheetPDF(currentStudent, leaderboardData);
+        } catch (error) {
+            console.error('PDF generation failed:', error);
+        } finally {
+            btn.innerHTML = originalHTML;
+            btn.disabled = false;
         }
     });
 }
@@ -264,3 +276,7 @@ if (document.readyState === 'loading') {
 } else {
     init();
 }
+
+// Object.defineProperty(window, 'devicePixelRatio', {
+//     get: () => 1
+// });

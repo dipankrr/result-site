@@ -68,21 +68,12 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 15px;
+    justify-content: space-between;
     margin-bottom: 10px;
 }
 
-.logo-placeholder {
-    width: 60px;
+.header-logo {
     height: 60px;
-    background: linear-gradient(135deg, #3498db, #2c3e50);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 28px;
 }
 
 .header h1 {
@@ -857,8 +848,11 @@ body {
 
 @media (max-width: 480px) {
     .logo-container {
-        flex-direction: column;
         text-align: center;
+    }
+    
+    .header-logo {
+        height: 40px;
     }
     
     .student-info-grid {
@@ -906,4 +900,18 @@ body {
 /* Ensure marksheet starts from top */
 .pdf-mode .marksheet {
     margin-top: 0 !important;
+}
+
+.pdf-mode {
+    display: flex;
+    justify-content: center;
+}
+
+.pdf-mode .marksheet {
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
 }
