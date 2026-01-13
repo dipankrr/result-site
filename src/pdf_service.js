@@ -635,7 +635,7 @@ function getMarksheetBody(student, leaderboardData) {
     if (leaderboardData) {
         const classBoard = leaderboardData[student.CLASS] || {};
         for (const rank in classBoard) {
-            if (classBoard[rank].some(s => s.name === student.NAME)) {
+            if (classBoard[rank].some(s => s.name === student.NAME && s.school === student.SCHOOL)) {
                 studentRank = `${rank}`;
                 break;
             }
@@ -653,7 +653,7 @@ function getMarksheetBody(student, leaderboardData) {
         <h3>ORGANISED BY</h3>
         <h2>SISTER NIVEDITA WELFARE FOUNDATION</h2>
         <p>GOVT. REGD. NO : UDYAM-WB-19-0024504</p>
-        <centre>ডিটল হাট, বংশীহারি, দ:দিনাজপুর, ৭৩৩১২১ <p>
+        <centre>ডিটলহাট, বংশীহারি, দ:দিনাজপুর, ৭৩৩১২১ <p>
         Phone No: 9614233213/ 98005 30276</centre>
     </div>
 
@@ -835,7 +835,7 @@ function printMarksheetOld(student, leaderboardData) {
     if (leaderboardData && student) {
         const classData = leaderboardData[student.CLASS] || {};
         for (const r in classData) {
-            if (classData[r].some(s => s.name === student.NAME)) {
+            if (classData[r].some(s => s.name === student.NAME && s.school === student.SCHOOL)) {
                 rank = `Rank #${r}`;
                 break;
             }

@@ -27,7 +27,7 @@ export function updateLeaderboard(student, leaderboardData) {
         leaderboardItem.className = `leaderboard-item rank-${rank}`;
         
         // Check if current student is in this rank
-        const isCurrentStudent = students.some(s => s.name === student.NAME);
+        const isCurrentStudent = students.some(s => s.name === student.NAME && s.school === student.SCHOOL);
         
         leaderboardItem.innerHTML = `
             <div class="rank-header">
@@ -44,10 +44,10 @@ export function updateLeaderboard(student, leaderboardData) {
                 <div class="rank-students" style="display: none;">
                     <div class="student-list">
                         ${students.map(s => `
-                            <div class="student-item ${s.name === student.NAME ? 'current' : ''}">
+                            <div class="student-item ${s.name === student.NAME && s.school === student.SCHOOL ? 'current' : ''}">
                                 <div class="student-name">
                                     ${s.name}
-                                    ${s.name === student.NAME ? '<span class="you-badge">(You)</span>' : ''}
+                                    ${s.name === student.NAME && s.school === student.SCHOOL ? '<span class="you-badge">(You)</span>' : ''}
                                 </div>
                                 <div class="student-school">${s.school}</div>
                             </div>

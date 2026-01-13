@@ -207,7 +207,7 @@ function checkCongratulations(student) {
     let studentRank = null;
     for (const rank in classLeaderboard) {
         const students = classLeaderboard[rank] || [];
-        if (students.some(s => s.name === student.NAME)) {
+        if (students.some(s => s.name === student.NAME && s.school === student.SCHOOL)) {
             studentRank = parseInt(rank);
             break;
         }
