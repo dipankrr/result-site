@@ -74,6 +74,11 @@ Phone No: 9614233213/ 98005 30276</centre>
             <p class="info-note">
                 <i class="fas fa-info-circle"></i> Enter your roll number exactly as provided
             </p>
+            <div class="school-ranks-section">
+                <button id="showSchoolRanksBtn" class="btn-school-ranks">
+                    <i class="fas fa-school"></i> Total Ranks by Schools
+                </button>
+            </div>
         </section>
 
         <!-- Congratulations Message (Dynamic) -->
@@ -86,21 +91,23 @@ Phone No: 9614233213/ 98005 30276</centre>
             </div>
             
             <div class="student-info-grid">
-                <div class="info-item">
-                    <span class="info-label">Name:</span>
-                    <span class="info-value" id="studentName">-</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Roll No:</span>
-                    <span class="info-value" id="studentRoll">-</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Class:</span>
-                    <span class="info-value" id="studentClass">-</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">School:</span>
-                    <span class="info-value" id="studentSchool">-</span>
+                <div class="info-item basic-info">
+                    <div class="info-row">
+                        <span class="info-label">Name:</span>
+                        <span class="info-value" id="studentName">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Roll No:</span>
+                        <span class="info-value" id="studentRoll">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Class:</span>
+                        <span class="info-value" id="studentClass">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">School:</span>
+                        <span class="info-value" id="studentSchool">-</span>
+                    </div>
                 </div>
                 <div class="info-item highlight">
                     <span class="info-label">Total Marks:</span>
@@ -305,6 +312,15 @@ Phone No: 9614233213/ 98005 30276</centre>
         z-index: -1;
      ">
 </div>
+
+    <!-- School Ranks Modal -->
+    <div id="schoolRanksModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2><i class="fas fa-trophy"></i> Total Ranks by School</h2>
+            <div id="schoolRanksList"></div>
+        </div>
+    </div>
 
     <script type="module" src="/src/app.js"></script>
 </body>

@@ -34,6 +34,17 @@ export async function loadLeaderboardData() {
     }
 }
 
+export async function loadSchoolsData() {
+    try {
+        const response = await fetch('/data/schools.json');
+        if (!response.ok) throw new Error('Failed to load schools data');
+        return await response.json();
+    } catch (error) {
+        console.warn('Using empty schools data:', error);
+        return [];
+    }
+}
+
 export function computeStatistics(studentData) {
     console.log('Computing statistics...');
     

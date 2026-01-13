@@ -1,4 +1,4 @@
-import { loadStudentData, computeStatistics, loadLeaderboardData } from './utils.js';
+import { loadStudentData, computeStatistics, loadLeaderboardData, loadSchoolsData } from './utils.js';
 import { createCharts, destroyCharts } from './charts.js';
 import { updateLeaderboard } from './leaderboard.js';
 import { updatePDFContent, downloadMarksheetPDF, printMarksheet } from './pdf_service.js';
@@ -6,6 +6,7 @@ import { updatePDFContent, downloadMarksheetPDF, printMarksheet } from './pdf_se
 let studentData = {};
 let computedData = {};
 let leaderboardData = {};
+let schoolsData = [];
 let currentStudent = null;
 
 async function init() {
@@ -15,6 +16,7 @@ async function init() {
         // Load all data
         studentData = await loadStudentData();
         leaderboardData = await loadLeaderboardData();
+        schoolsData = await loadSchoolsData();
         computedData = computeStatistics(studentData);
         
         // Hide loading screen
@@ -70,6 +72,44 @@ function setupEventListeners() {
             btn.disabled = false;
         }
     });
+
+    // School ranks modal
+    document.getElementById('showSchoolRanksBtn').addEventListener('click', () => {
+        showSchoolRanksModal();
+    });
+}
+
+function showSchoolRanksModal() {
+    const modal = document.getElementById('schoolRanksModal');
+    const list = document.getElementById('schoolRanksList');
+    
+    // Sort schools by RANKS descending
+    const sortedSchools = [...schoolsData].sort((a, b) => parseInt(b.RANKS) - parseInt(a.RANKS));
+    
+    // Generate HTML
+    const html = sortedSchools.map((school, index) => {
+        const isTop10 = index < 10;
+        return `
+            <div class="school-rank-item ${isTop10 ? 'top-10' : ''}">
+                <div class="school-name">${index + 1}. ${school.SCHOOL}</div>
+                <div class="school-ranks">${school.RANKS} Ranks</div>
+            </div>
+        `;
+    }).join('');
+    
+    list.innerHTML = html;
+    
+    // Show modal
+    modal.style.display = 'block';
+    
+    // Close modal when clicking X or outside
+    const closeBtn = modal.querySelector('.close');
+    closeBtn.onclick = () => modal.style.display = 'none';
+    window.onclick = (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    };
 }
 
 function handleSearch() {
