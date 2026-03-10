@@ -2,6 +2,7 @@
   "1": {
     "1": [
       {
+        "roll": "BNP44083",
         "name": "MD AMAN",
         "school": "KOCHIMON SHISHU SHIKSHA NIKETAN",
         "total": 93
@@ -9,6 +10,7 @@
     ],
     "2": [
       {
+        "roll": "BLG66004",
         "name": "BEDANGI DAS",
         "school": "RAMKRISHNA SARADA MISSION VIDYAMANDIR",
         "total": 92
@@ -16,11 +18,13 @@
     ],
     "3": [
       {
+        "roll": "BNP44089",
         "name": "MINATI BASKEY",
         "school": "RAMKRISHNA SHISHU NIKETAN",
         "total": 89
       },
       {
+        "roll": "KSM38009",
         "name": "IVAN ALI",
         "school": "KUSHMANDI KISHALAYA SCHOOL & S.K LIBRARY",
         "total": 89
@@ -28,16 +32,19 @@
     ],
     "4": [
       {
+        "roll": "BNP44067",
         "name": "JOYEE BASAK",
         "school": "SARAI BUNIADPUR F.P. SCHOOL",
         "total": 88
       },
       {
+        "roll": "BNP44701",
         "name": "ABIR DEBNATH",
         "school": "RAMKRISHNA SHISHU NIKETAN (CHENCHRA)",
         "total": 88
       },
       {
+        "roll": "KSM38024",
         "name": "SANIM AYAN",
         "school": "KUSHMANDI KISHALAYA SCHOOL & S.K LIBRARY",
         "total": 88
@@ -45,11 +52,13 @@
     ],
     "5": [
       {
+        "roll": "BLG66005",
         "name": "CHANDRIMA SARKAR",
         "school": "RAMKRISHNA SARADA MISSION VIDYAMANDIR",
         "total": 87
       },
       {
+        "roll": "BNP44111",
         "name": "REANSHI KUNDU",
         "school": "KOCHIMON SHISHU SHIKSHA NIKETAN",
         "total": 87
@@ -57,16 +66,19 @@
     ],
     "6": [
       {
+        "roll": "BNP44029",
         "name": "ATIRIJA ISLAM",
         "school": "KOCHIMON SHISHU SHIKSHA NIKETAN",
         "total": 86
       },
       {
+        "roll": "BNP44081",
         "name": "MAHEK TANISHA",
         "school": "KOCHIMON SHISHU SHIKSHA NIKETAN",
         "total": 86
       },
       {
+        "roll": "TM22006",
         "name": "BEDANTIKA PAL",
         "school": "CHAKDAPAT F.P. SCHOOL",
         "total": 86
@@ -74,6 +86,7 @@
     ],
     "7": [
       {
+        "roll": "GPG12016",
         "name": "ANTAREEP SARKAR",
         "school": "SAHAJPATH SHIKSHA KENDRA",
         "total": 85
@@ -81,21 +94,25 @@
     ],
     "8": [
       {
+        "roll": "BNP44004",
         "name": "AHAD ISLAM",
         "school": "KOCHIMON SHISHU SHIKSHA NIKETAN",
         "total": 83
       },
       {
+        "roll": "BNP44065",
         "name": "JIYA AFRIN",
         "school": "BUNIADPUR VIVEKANANDA VIDYAMANDIR",
         "total": 83
       },
       {
+        "roll": "BNP44084",
         "name": "MD FARHAN ISLAM",
         "school": "KOCHIMON SHISHU SHIKSHA NIKETAN",
         "total": 83
       },
       {
+        "roll": "PSG36005",
         "name": "LIBA JAHAN",
         "school": "BASURIYA KOCHI KACHA VIDYAPITH",
         "total": 83
@@ -103,6 +120,7 @@
     ],
     "9": [
       {
+        "roll": "DLP42008",
         "name": "MAHI HASAN",
         "school": " DESHBANDHU SHISHU SHIKSHA NIKETAN",
         "total": 82
@@ -110,56 +128,67 @@
     ],
     "10": [
       {
+        "roll": "BLG66009",
         "name": "PIUSH GHOSH",
         "school": "RAMKRISHNA SARADA MISSION VIDYAMANDIR",
         "total": 81
       },
       {
+        "roll": "BLG66011",
         "name": "SHRABON NANDI",
         "school": "RAMKRISHNA SARADA MISSION VIDYAMANDIR",
         "total": 81
       },
       {
+        "roll": "BNP44006",
         "name": "AHIL REZA",
         "school": "BUNIADPUR IDEAL K.G SCHOOL",
         "total": 81
       },
       {
+        "roll": "BNP44107",
         "name": "RAJ SARKAR",
         "school": "RAMKRISHNA SHISHU NIKETAN",
         "total": 81
       },
       {
+        "roll": "GPG12057",
         "name": "MIHAN MONDAL",
         "school": "KACHI KANCHA SHIKSHA ANGAN",
         "total": 81
       },
       {
+        "roll": "GPG12096",
         "name": "SHUBHRAJEET DATTA",
         "school": "BASANA SMRITI KACHI KANCHA SHIKSHU VIDYAPITH",
         "total": 81
       },
       {
+        "roll": "KSM38012",
         "name": "MEGHNA JANNAT",
         "school": "DANGAPARA ILMA PUBLIC SCHOOL",
         "total": 81
       },
       {
+        "roll": "NBZ75003",
         "name": "PURABI BISWAS",
         "school": "BAZRAPUKUR KISHALAYA NURSERY K G SCHOOL",
         "total": 81
       },
       {
+        "roll": "TM22007",
         "name": "DEBAI SARKAR",
         "school": "THAKURPURA MILANSAMITI VIDYANIKETAN",
         "total": 81
       },
       {
+        "roll": "TM22008",
         "name": "PARNA PAUL",
         "school": "BIPLABI BIDYA NIKETAN",
         "total": 81
       },
       {
+        "roll": "TPN55003",
         "name": "ARADHYA SARAKAR",
         "school": "TAPAN GOLDEN FUTURE SCHOOL",
         "total": 81
@@ -169,6 +198,7 @@
   "2": {
     "1": [
       {
+        "roll": "GNP33021",
         "name": "SAGNIK SARKAR",
         "school": "SARASWATI SHISHU MANDIR",
         "total": 97
@@ -176,6 +206,7 @@
     ],
     "2": [
       {
+        "roll": "HRP77011",
         "name": "AFSANA PARVIN",
         "school": "HARIRAMPUR NALANDA SHISHU BHAWAN",
         "total": 93
@@ -183,6 +214,7 @@
     ],
     "3": [
       {
+        "roll": "KSM38052",
         "name": "SAMRIDDHI SAHA",
         "school": "KUSHMANDI KISHALAYA SCHOOL & S.K LIBRARY",
         "total": 92
@@ -190,6 +222,7 @@
     ],
     "4": [
       {
+        "roll": "GPG12174",
         "name": "UTSAB BASAK",
         "school": "KACHI KANCHA SHIKSHA ANGAN",
         "total": 91
@@ -197,36 +230,49 @@
     ],
     "5": [
       {
+        "roll": "BLG66030",
+        "name": "FARIHA ISRAT",
+        "school": "BUNIADPUR VIVEKANANDA VIDYAMANDIR",
+        "total": 91
+      },
+      {
+        "roll": "BNP44182",
         "name": "SOM SAHA",
         "school": "RAMKRISHNA SARADA MISSION VIDYAMANDIR",
         "total": 90
       },
       {
+        "roll": "BNP44250",
         "name": "SYAMANTAK SARKAR",
         "school": "BUNIADPUR VIVEKANANDA VIDYAMANDIR",
         "total": 90
       },
       {
+        "roll": "BNP44251",
         "name": "TAPABRATA BHOWMIK ",
         "school": "BUNIADPUR VIVEKANANDA VIDYAMANDIR",
         "total": 90
       },
       {
+        "roll": "GNP33022",
         "name": "SHREYAS MONDAL",
         "school": "SARASWATI SHISHU MANDIR",
         "total": 90
       },
       {
+        "roll": "GPG12108",
         "name": "AFIF HASAN",
         "school": "RAHAMANIA SIKSHA NIKETAN",
         "total": 90
       },
       {
+        "roll": "GPG12157",
         "name": "RUP BASAK",
         "school": "KACHI KANCHA SHIKSHA ANGAN",
         "total": 90
       },
       {
+        "roll": "GPG12173",
         "name": "TRISHA BARMAN",
         "school": "KACHI KANCHA SHIKSHA ANGAN",
         "total": 90
@@ -234,21 +280,25 @@
     ],
     "6": [
       {
+        "roll": "BNP44205",
         "name": "MEDHA GHOSH",
         "school": "KOCHIMON SHISHU SHIKSHA NIKETAN",
         "total": 89
       },
       {
+        "roll": "GPG12167",
         "name": "SREEJITA SAHA",
         "school": "KACHI KANCHA SHIKSHA ANGAN",
         "total": 89
       },
       {
+        "roll": "KSM38037",
         "name": "DHRITIMAN BISWAS",
         "school": "KUSHMANDI KISHALAYA SCHOOL & S.K LIBRARY",
         "total": 89
       },
       {
+        "roll": "TPN55060",
         "name": "MOULI DAS",
         "school": "TAPAN GOLDEN FUTURE SCHOOL",
         "total": 89
@@ -256,6 +306,7 @@
     ],
     "7": [
       {
+        "roll": "GPG12168",
         "name": "SUPROVA BASAK",
         "school": "KACHI KANCHA SHIKSHA ANGAN",
         "total": 88
@@ -263,11 +314,13 @@
     ],
     "8": [
       {
+        "roll": "BNP44242",
         "name": "SULAGNA BISWAS",
         "school": "KOCHIMON SHISHU SHIKSHA NIKETAN",
         "total": 87
       },
       {
+        "roll": "HRP77020",
         "name": "RIYA SARKAR",
         "school": "MAHENDRA MODEL K.G. SCHOOL",
         "total": 87
@@ -275,11 +328,13 @@
     ],
     "9": [
       {
+        "roll": "GPG12142",
         "name": "MD AYAN ALAM",
         "school": "RAHAMANIA SIKSHA NIKETAN",
         "total": 86
       },
       {
+        "roll": "HRP77017",
         "name": "PARISI CHAKRABORTY",
         "school": "HARIRAMPUR NALANDA SHISHU BHAWAN",
         "total": 86
@@ -287,21 +342,25 @@
     ],
     "10": [
       {
+        "roll": "BNP44239",
         "name": "SOUMIK DEB",
         "school": "KOCHIMON SHISHU SHIKSHA NIKETAN",
         "total": 85
       },
       {
+        "roll": "GNP33020",
         "name": "RAIEM RAHAMAN",
         "school": "KIDS' HALL",
         "total": 85
       },
       {
+        "roll": "GPG12160",
         "name": "SADIA SARKAR",
         "school": "SAHAJPATH SHIKSHA KENDRA",
         "total": 85
       },
       {
+        "roll": "GPG12172",
         "name": "TITHI SARKAR",
         "school": "SAHAJPATH SHIKSHA KENDRA",
         "total": 85
@@ -311,6 +370,7 @@
   "3": {
     "1": [
       {
+        "roll": "KSM38083",
         "name": "RUHEE NISHAT",
         "school": "KUSHMANDI KISHALAYA SCHOOL & S.K LIBRARY",
         "total": 95
@@ -318,6 +378,7 @@
     ],
     "2": [
       {
+        "roll": "TPN55095",
         "name": "DEBANJON DHOR",
         "school": "TAPAN GOLDEN FUTURE SCHOOL",
         "total": 89
@@ -325,6 +386,7 @@
     ],
     "3": [
       {
+        "roll": "KSM38081",
         "name": "ROSHNI HASAN",
         "school": "KUSHMANDI KISHALAYA SCHOOL & S.K LIBRARY",
         "total": 88
@@ -332,6 +394,7 @@
     ],
     "4": [
       {
+        "roll": "BNP44312",
         "name": "RANOJIT SARKAR",
         "school": "RAMKRISHNA SHISHU NIKETAN",
         "total": 87
@@ -339,6 +402,7 @@
     ],
     "5": [
       {
+        "roll": "BLG66033",
         "name": "ANKANA CHAKRABORTY",
         "school": "RAMKRISHNA SARADA MISSION VIDYAMANDIR",
         "total": 85
@@ -346,11 +410,13 @@
     ],
     "6": [
       {
+        "roll": "GPG12221",
         "name": "SOURAV BISWAS",
         "school": "SAHAJPATH SHIKSHA KENDRA",
         "total": 84
       },
       {
+        "roll": "HRP77041",
         "name": "SNIGDHAJIT PAUL",
         "school": "SARASWATI SHISHU MANDIR",
         "total": 84
@@ -358,6 +424,7 @@
     ],
     "7": [
       {
+        "roll": "TPN55115",
         "name": "SURAIYA ALAM",
         "school": "BADALPUR F. P. SCHOOL",
         "total": 82
@@ -365,6 +432,7 @@
     ],
     "8": [
       {
+        "roll": "BNP44308",
         "name": "PRITI MANDAL",
         "school": "BUNIADPUR VIVEKANANDA VIDYAMANDIR",
         "total": 81
@@ -372,16 +440,25 @@
     ],
     "9": [
       {
+        "roll": "BNP44310",
         "name": "RAJDIP BARMAN",
         "school": "KOCHIMON SHISHU SHIKSHA NIKETAN",
         "total": 80
       },
       {
+        "roll": "BNP44305",
+        "name": "PARINEETA ROY",
+        "school": "BUNIADPUR VIVEKANANDA VIDYAMANDIR",
+        "total": 80
+      },
+      {
+        "roll": "BNP44321",
         "name": "RUPAM SHIL ",
         "school": "RAMKRISHNA SHISHU NIKETAN",
         "total": 80
       },
       {
+        "roll": "TPN55110",
         "name": "SHUBANGI DHOR",
         "school": "TAPAN GOLDEN FUTURE SCHOOL",
         "total": 80
@@ -389,66 +466,73 @@
     ],
     "10": [
       {
+        "roll": "BNP44269",
         "name": "AISHEE ROY",
         "school": "SARADA SHISHU TEERTHA",
         "total": 79
       },
       {
+        "roll": "BNP44276",
         "name": "ARNAB BARMAN",
         "school": "BUNIADPUR IDEAL K.G SCHOOL",
         "total": 79
       },
       {
+        "roll": "BNP44293",
         "name": "KARAN CHOWDHURY",
         "school": "SHUBHADIPAYAN",
         "total": 79
       },
       {
-        "name": "PARINEETA ROY",
-        "school": "BUNIADPUR VIVEKANANDA VIDYAMANDIR",
-        "total": 79
-      },
-      {
+        "roll": "BNP44326",
         "name": "SANBARTIKA PRAMANIK",
         "school": "KOCHIMON SHISHU SHIKSHA NIKETAN",
         "total": 79
       },
       {
+        "roll": "BNP44328",
         "name": "SANNIDHYO PRAMANIK",
         "school": "KOCHIMON SHISHU SHIKSHA NIKETAN",
         "total": 79
       },
       {
+        "roll": "BNP44338",
         "name": "SOUNAK SHEKHAR BISWAS",
         "school": "RAMKRISHNA SHISHU NIKETAN",
         "total": 79
       },
       {
+        "roll": "GPG12211",
         "name": "RUDRANI CHOWDHURY",
         "school": "KACHI KANCHA SHIKSHA ANGAN",
         "total": 79
       },
       {
+        "roll": "GPG12230",
         "name": "ZULFA KHATUN",
         "school": "SAHAJPATH SHIKSHA KENDRA",
         "total": 79
       },
       {
+        "roll": "HRP77040",
         "name": "SHRUTILEKHA KARMAKAR",
         "school": "HARIRAMPUR NALANDA SHISHU BHAWAN",
         "total": 79
       },
       {
+        "roll": "KSM38090",
         "name": "TRIDIB SARKAR",
         "school": "SARADA SHISHU TEERTHA",
         "total": 79
       },
       {
+        "roll": "TPN55090",
         "name": "AFIK ISLAM",
         "school": "TAPAN GOLDEN FUTURE SCHOOL",
         "total": 79
       },
       {
+        "roll": "TPN55108",
         "name": "PIYUSH BISWAS",
         "school": "SHISU TIRTHA VIDYA NIKETAN",
         "total": 79
@@ -458,6 +542,7 @@
   "4": {
     "1": [
       {
+        "roll": "BNP44385",
         "name": "DISHA SARKAR",
         "school": "BUNIADPUR VIVEKANANDA VIDYAMANDIR",
         "total": 96
@@ -465,11 +550,13 @@
     ],
     "2": [
       {
+        "roll": "DLP42045",
         "name": "ARNAJ TASNIM",
         "school": "HARIRAMPUR VIVEKANANDA VIDYABHAVAN",
         "total": 90
       },
       {
+        "roll": "TPN55149",
         "name": "TAMOGHNA SARKAR",
         "school": "TAPAN F. P. SCHOOL",
         "total": 90
@@ -477,6 +564,7 @@
     ],
     "3": [
       {
+        "roll": "SHL85179",
         "name": "SRIJAN KARMAKAR",
         "school": "SIHOL SARADA SHISHU MANDIR",
         "total": 86
@@ -484,11 +572,13 @@
     ],
     "4": [
       {
+        "roll": "BNP44444",
         "name": "RISHI DEBSHARMA",
         "school": "KOCHIMON SHISHU SHIKSHA NIKETAN",
         "total": 84
       },
       {
+        "roll": "GPG12244",
         "name": "MAINAK DUTTA",
         "school": "SAHAJPATH SHIKSHA KENDRA",
         "total": 84
@@ -496,21 +586,25 @@
     ],
     "5": [
       {
+        "roll": "BNP44441",
         "name": "REHAN AHMED",
         "school": "AL AMEEN MODEL MISSION",
         "total": 83
       },
       {
+        "roll": "GNP33049",
         "name": "NAFEESA ALI SARKAR",
         "school": "FAKIRPARA FP PRIMARY SCHOOL",
         "total": 83
       },
       {
+        "roll": "KSM38096",
         "name": "ARIS HOSSAIN",
         "school": "KUSHMANDI F.P SCHOOL",
         "total": 83
       },
       {
+        "roll": "SHL85158",
         "name": "RAIHANUL HAQ",
         "school": "AL AMEEN MODEL SCHOOL",
         "total": 83
@@ -518,6 +612,7 @@
     ],
     "6": [
       {
+        "roll": "BLG66051",
         "name": "SWARNADIP MAHANTA",
         "school": "SARASWATI SHISHU VIDYAMANDIR",
         "total": 81
@@ -525,16 +620,19 @@
     ],
     "7": [
       {
+        "roll": "BNP44433",
         "name": "PUSPITA PAUL",
         "school": "KOCHIMON SHISHU SHIKSHA NIKETAN",
         "total": 80
       },
       {
+        "roll": "HRP77053",
         "name": "SHARA GUPTA",
         "school": "HARIRAMPUR NALANDA SHISHU BHAWAN",
         "total": 80
       },
       {
+        "roll": "TPN55123",
         "name": "ANNESHA BARMAN ",
         "school": "TAPAN GOLDEN FUTURE SCHOOL",
         "total": 80
@@ -542,11 +640,13 @@
     ],
     "8": [
       {
+        "roll": "BLG66050",
         "name": "SATTWIK SARKAR",
         "school": "RAMKRISHNA SARADA MISSION VIDYAMANDIR",
         "total": 79
       },
       {
+        "roll": "KSM38114",
         "name": "SHREYA PUTATUNDA",
         "school": "KUSHMANDI F.P SCHOOL",
         "total": 79
@@ -554,16 +654,19 @@
     ],
     "9": [
       {
+        "roll": "BNP44362",
         "name": "AHANA PARVIN ",
         "school": "BUNIADPUR VIVEKANANDA VIDYAMANDIR",
         "total": 78
       },
       {
+        "roll": "BNP44380",
         "name": "BIBEK MAHATO",
         "school": "BUNIADPUR VIVEKANANDA VIDYAMANDIR",
         "total": 78
       },
       {
+        "roll": "GPG12258",
         "name": "SAMPURNA GHOSH",
         "school": "KACHI KANCHA SHIKSHA ANGAN",
         "total": 78
@@ -571,36 +674,43 @@
     ],
     "10": [
       {
+        "roll": "BNP44399",
         "name": "MANTASHA ALAM",
         "school": "BUNIADPUR IDEAL K.G SCHOOL",
         "total": 77
       },
       {
+        "roll": "GNP33044",
         "name": "ARJYAMAN SARKAR",
         "school": "SARASWATI SHISHU MANDIR",
         "total": 77
       },
       {
+        "roll": "GNP33050",
         "name": "RIDDHIMAN DAS",
         "school": "RABINDRA SARANI",
         "total": 77
       },
       {
+        "roll": "GPG12259",
         "name": "SARA BEGAM",
         "school": "RAHAMANIA SIKSHA NIKETAN",
         "total": 77
       },
       {
+        "roll": "KSM38092",
         "name": "ABRARUL HOQUE",
         "school": "KUSHMANDI KISHALAYA SCHOOL & S.K LIBRARY",
         "total": 77
       },
       {
+        "roll": "SHL85152",
         "name": "NAPHISA ALAM",
         "school": "AL AMEEN SHISHU BIKASH MISSION",
         "total": 77
       },
       {
+        "roll": "SYP45013",
         "name": "DHRUBA JYOTI SARKAR",
         "school": "VIVEKANANDA VIDYA MANDIR",
         "total": 77
@@ -610,6 +720,7 @@
   "5": {
     "1": [
       {
+        "roll": "GNP33068",
         "name": "SAJIB DEBNATH",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 88
@@ -617,11 +728,13 @@
     ],
     "2": [
       {
+        "roll": "BNP44495",
         "name": "FARHAN SADIK ",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 86
       },
       {
+        "roll": "BNP44545",
         "name": "SRISTI GHOSH",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 86
@@ -629,16 +742,19 @@
     ],
     "3": [
       {
+        "roll": "BLG66052",
         "name": "ANKIT MAHATO",
         "school": "BALURGHAT HIGH SCHOOL",
         "total": 84
       },
       {
+        "roll": "BNP44478",
         "name": "ALIA AL RAHAMAN",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 84
       },
       {
+        "roll": "TPN55167",
         "name": "RUPAYAN GHOSH",
         "school": "SIKARPUR F. P. SCHOOL",
         "total": 84
@@ -646,11 +762,13 @@
     ],
     "4": [
       {
+        "roll": "BNP44503",
         "name": "MANALI DAS",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 83
       },
       {
+        "roll": "KSM38126",
         "name": "JUHI BENOZIR RAHAMAN",
         "school": "KUSHMANDI HIGH SCHOOL (H.S)",
         "total": 83
@@ -658,6 +776,7 @@
     ],
     "5": [
       {
+        "roll": "BNP44524",
         "name": "RIDDHIMAN SARKAR",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 81
@@ -665,11 +784,23 @@
     ],
     "6": [
       {
+        "roll": "BNP44483",
         "name": "ANKAN SARDAR",
         "school": "GHASIPUR F.P SCHOOL",
         "total": 80
+      },{
+        "roll": "BNP44477",
+        "name": "SAHIM HOSSAIN",
+        "school": "MAHENDRA MODEL K.G. SCHOOL",
+        "total": 80
+      },{
+        "roll": "HRP77077",
+        "name": "AISHI GUPTA",
+        "school": "BANSHIHARI HIGH SCHOOL",
+        "total": 80
       },
       {
+        "roll": "BNP44548",
         "name": "SUMAN HALDAR",
         "school": "NARAYANPUR JR. BASIC SCHOOL",
         "total": 80
@@ -677,73 +808,87 @@
     ],
     "7": [
       {
+        "roll": "BNP44482",
         "name": "ANISHA PARVIN",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 79
       },
       {
+        "roll": "BNP44519",
         "name": "RAIHAN ISLAM",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 79
       },
       {
+        "roll": "BNP44542",
         "name": "SIMA SABNAM",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 79
       },
       {
+        "roll": "KSM38133",
         "name": "SAMARA ISLAM",
         "school": "KUSHMANDI HIGH SCHOOL (H.S)",
         "total": 79
       },
       {
+        "roll": "NBZ75017",
         "name": "ANANYA PAUL",
         "school": "NAYABAZAR HIGH SCHOOL (H.S)",
         "total": 79
       },
       {
+        "roll": "SYP45024",
         "name": "KRITTIKA SAHA",
         "school": "SAYRAPUR K.M.V HIGH SCHOOL",
         "total": 79
       }
     ],
     "8": [
+      
       {
-        "name": "AISHI GUPTA",
+        "roll": "BNP44499",
+        "name": "JENIFA YEASMIN",
+        "school": "PATH BHABAN",
+        "total": 78
+      },{
+        "roll": "BNP44506",
+        "name": "MD ADIL",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 78
       },
       {
-        "name": "JENIFA YEASMIN",
-        "school": "PATH BHABAN",
-        "total": 78
-      },
-      {
+        "roll": "BNP44512",
         "name": "NOUREEN TANVI",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 78
       },
       {
+        "roll": "BNP44518",
         "name": "RADHIKA MAHATO",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 78
       },
       {
+        "roll": "BNP44553",
         "name": "ZISHAN CHOWDHURY",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 78
       },
       {
+        "roll": "GNP33069",
         "name": "SAYED INSHA RAHAMAN",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 78
       },
       {
+        "roll": "HRP77060",
         "name": "ARNAB GHOSH",
         "school": "HARIRAMPUR NALANDA SHISHU BHAWAN",
         "total": 78
       },
       {
+        "roll": "TPN55164",
         "name": "RAISHA NUR",
         "school": "SHISU TIRTHA VIDYA NIKETAN",
         "total": 78
@@ -751,21 +896,25 @@
     ],
     "9": [
       {
+        "roll": "BNP44475",
         "name": "ABIR SAHA ",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 77
       },
       {
+        "roll": "BNP44514",
         "name": "PRITHWIJIT KAR",
         "school": "SARADA SHISHU TEERTHA",
         "total": 77
       },
       {
+        "roll": "GNP33078",
         "name": "TIYASHA BARDHAN",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 77
       },
       {
+        "roll": "KSM38127",
         "name": "JUNAID HOSSAIN",
         "school": "KUSHMANDI KISHALAYA SCHOOL & S.K LIBRARY",
         "total": 77
@@ -773,61 +922,73 @@
     ],
     "10": [
       {
+        "roll": "BLG66053",
         "name": "DIPAYAN MOHANTA",
         "school": "BALURGHAT HIGH SCHOOL",
         "total": 76
       },
       {
+        "roll": "BNP44551",
         "name": "TANISHA AMROHI",
         "school": "HATPUKURIA F.P SCHOOL",
         "total": 76
       },
       {
+        "roll": "DLP42099",
         "name": "TAHAMINA YEASMIN",
         "school": "DAULATPUR ADARSHA VIDYAPITH",
         "total": 76
       },
       {
+        "roll": "GNP33059",
         "name": "DAMAYANTEE HALDER",
         "school": "KARIAL JUNIOUR BASIC SCHOOL",
         "total": 76
       },
       {
+        "roll": "GNP33074",
         "name": "SREEJA BASAK",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 76
       },
       {
+        "roll": "GNP33075",
         "name": "SRIJAN SARKAR",
         "school": "SARASWATI SHISHU MANDIR",
         "total": 76
       },
       {
+        "roll": "PSG36072",
         "name": "RUHAN HOSSAIN",
         "school": "SONAR BANGLA MODEL SCHOOL",
         "total": 76
       },
       {
+        "roll": "SHL85199",
         "name": "FIROJ AHAMMED",
         "school": "ALIAH MODEL MISSION",
         "total": 76
       },
       {
+        "roll": "SHL85209",
         "name": "LEAH LUTFA BANU",
         "school": "AL AMEEN MODEL SCHOOL",
         "total": 76
       },
       {
+        "roll": "SHL85231",
         "name": "RAKES ALI",
         "school": "AL AMEEN FORMATIVE MISSION",
         "total": 76
       },
       {
+        "roll": "SHL85238",
         "name": "SABNAM MASTAFI",
         "school": "LEARNING POINT ACADEMY",
         "total": 76
       },
       {
+        "roll": "SYP45017",
         "name": "AARUNIKA MAJUMDER",
         "school": "SAYRAPUR K.M.V HIGH SCHOOL",
         "total": 76
@@ -837,6 +998,7 @@
   "6": {
     "1": [
       {
+        "roll": "BNP44574",
         "name": "NANDAN DEBNATH",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 92
@@ -844,6 +1006,7 @@
     ],
     "2": [
       {
+        "roll": "BNP44564",
         "name": "AYAN PAUL",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 90
@@ -851,11 +1014,13 @@
     ],
     "3": [
       {
+        "roll": "GNP33101",
         "name": "MRINMAY PAUL",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 88
       },
       {
+        "roll": "KSM38149",
         "name": "RAISA SAHANI",
         "school": "KUSHMANDI HIGH SCHOOL (H.S)",
         "total": 88
@@ -863,21 +1028,25 @@
     ],
     "4": [
       {
+        "roll": "GNP33090",
         "name": "CHARUSMITA ROY",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 87
       },
       {
+        "roll": "GNP33099",
         "name": "MAITRY ROY",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 87
       },
       {
+        "roll": "GNP33105",
         "name": "PARAG MAJUMDER",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 87
       },
       {
+        "roll": "GNP33113",
         "name": "RIFAN CHOUDHURY",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 87
@@ -885,31 +1054,37 @@
     ],
     "5": [
       {
+        "roll": "BNP44567",
         "name": "GUNJAN KUMAR GHOSH",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 85
       },
       {
+        "roll": "DLP42120",
         "name": "RISHITA MEHEK",
         "school": "DAULATPUR ADARSHA VIDYAPITH",
         "total": 85
       },
       {
+        "roll": "GNP33082",
         "name": "ARITRA HALDER",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 85
       },
       {
+        "roll": "GNP33087",
         "name": "BIPRAJIT CHAKRABORTY",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 85
       },
       {
+        "roll": "GNP33088",
         "name": "BIRAJ PAUL",
         "school": "KADIHAT BELBARI HIGH SCHOOL",
         "total": 85
       },
       {
+        "roll": "GNP33131",
         "name": "TAISHEE DAS",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 85
@@ -917,21 +1092,25 @@
     ],
     "6": [
       {
+        "roll": "BNP44561",
         "name": "ARNAB SARKAR",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 84
       },
       {
+        "roll": "GNP33083",
         "name": "ARNAB CHAKRABORTY",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 84
       },
       {
+        "roll": "GNP33085",
         "name": "ARNAB PAUL",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 84
       },
       {
+        "roll": "GNP33106",
         "name": "PRANIT CHAKRABARTY",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 84
@@ -939,21 +1118,25 @@
     ],
     "7": [
       {
+        "roll": "GNP33086",
         "name": "AVRADIP SAHA",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 83
       },
       {
+        "roll": "GNP33112",
         "name": "RAJASHREE GHOSH",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 83
       },
       {
+        "roll": "GNP33124",
         "name": "SHRIJA GHOSH",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 83
       },
       {
+        "roll": "NBZ75063",
         "name": "DIPAYAN DHAR",
         "school": "NAYABAZAR HIGH SCHOOL (H.S)",
         "total": 83
@@ -961,16 +1144,19 @@
     ],
     "8": [
       {
+        "roll": "BNP44571",
         "name": "MARFADUL ISLAM",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 82
       },
       {
+        "roll": "GNP33098",
         "name": "KUNDAN RAY",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 82
       },
       {
+        "roll": "GNP33102",
         "name": "NABASHREE KUNDU",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 82
@@ -978,26 +1164,31 @@
     ],
     "9": [
       {
+        "roll": "BLG66065",
         "name": "SHUVECHCHA MAHANTA",
         "school": "BALURGHAT GIRLS HIGH SCHOOL",
         "total": 81
       },
       {
+        "roll": "GNP33103",
         "name": "NANDITA ROY",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 81
       },
       {
+        "roll": "GNP33115",
         "name": "RITANKAR GHOSH",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 81
       },
       {
+        "roll": "GNP33119",
         "name": "SARGUN BASAK",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 81
       },
       {
+        "roll": "GNP33120",
         "name": "SARTHAK CHAKI",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 81
@@ -1005,51 +1196,66 @@
     ],
     "10": [
       {
+        "roll": "BLG66058",
         "name": "ARUSHI SARKAR",
         "school": "BAUL PARAMESHWAR HIGH SCHOOL",
         "total": 80
+      },{
+        "roll": "GNP33079",
+        "name": "AFRIN TAMANNA CHOWDHURY",
+        "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
+        "total": 80
       },
       {
+        "roll": "BNP44582",
         "name": "SAPTARSHI SARKAR",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 80
       },
       {
+        "roll": "DLP42121",
         "name": "SAINA PARVIN",
         "school": "DAULATPUR ADARSHA VIDYAPITH",
         "total": 80
       },
       {
+        "roll": "GNP33094",
         "name": "HARI SHANKAR DAS",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 80
       },
       {
+        "roll": "GNP33096",
         "name": "JAYAN ISLAM",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 80
       },
       {
+        "roll": "GNP33097",
         "name": "KINJAL SAHA",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 80
       },
       {
+        "roll": "KSM38143",
         "name": "LUBNA KHATUN",
         "school": "KUSHMANDI HIGH SCHOOL (H.S)",
         "total": 80
       },
       {
+        "roll": "KSM38155",
         "name": "TAUSIA ISLAM",
         "school": "KUSHMANDI HIGH SCHOOL (H.S)",
         "total": 80
       },
       {
+        "roll": "NBZ75075",
         "name": "PROSEN MAHANTA",
         "school": "NAYABAZAR HIGH SCHOOL (H.S)",
         "total": 80
       },
       {
+        "roll": "NBZ75079",
         "name": "SAKARNA GHOSH",
         "school": "NAYABAZAR HIGH SCHOOL (H.S)",
         "total": 80
@@ -1059,13 +1265,28 @@
   "7": {
     "1": [
       {
+        "roll": "BNP44609",
         "name": "JHUMA ROY",
         "school": "BANSHIHARI BALIKA VIDYALAYA",
+        "total": 82
+      },
+      {
+        "roll": "TM22067",
+        "name": "BIBEK MAHANTA",
+        "school": "BLHS",
         "total": 82
       }
     ],
     "2": [
+      
       {
+        "roll": "GNP33143",
+        "name": "PARAMA DAS",
+        "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
+        "total": 81
+      },
+      {
+        "roll": "GNP33148",
         "name": "SHUBHASREE DAS",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 81
@@ -1073,21 +1294,19 @@
     ],
     "3": [
       {
+        "roll": "BNP44598",
         "name": "ADITYA SARKAR",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 79
       },
       {
+        "roll": "BNP44608",
         "name": "IMON ISLAM",
         "school": "BUNIADPUR HIGH SCHOOL",
         "total": 79
       },
       {
-        "name": "PARAMA DAS",
-        "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
-        "total": 79
-      },
-      {
+        "roll": "NBZ75091",
         "name": "MAYUKH DAS",
         "school": "NAYABAZAR HIGH SCHOOL (H.S)",
         "total": 79
@@ -1095,21 +1314,25 @@
     ],
     "4": [
       {
+        "roll": "BLG66082",
         "name": "SHASHWATI MAHATO",
         "school": "BALURGHAT GIRLS HIGH SCHOOL",
         "total": 78
       },
       {
+        "roll": "BNP44600",
         "name": "ALINA HASSAN",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 78
       },
       {
+        "roll": "GNP33154",
         "name": "TIYASHA ROY",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 78
       },
       {
+        "roll": "NBZ75107",
         "name": "SOUNHIK DAS",
         "school": "NAYABAZAR HIGH SCHOOL (H.S)",
         "total": 78
@@ -1117,21 +1340,25 @@
     ],
     "5": [
       {
+        "roll": "BNP44599",
         "name": "AHASHAN MONDAL",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 77
       },
       {
+        "roll": "GNP33136",
         "name": "ANUSHKA BASAK",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 77
       },
       {
+        "roll": "KSM38165",
         "name": "RIFA SANZIDA",
         "school": "KUSHMANDI HIGH SCHOOL (H.S)",
         "total": 77
       },
       {
+        "roll": "NBZ75088",
         "name": "DIGANTA BARMAN",
         "school": "NAYABAZAR HIGH SCHOOL (H.S)",
         "total": 77
@@ -1139,38 +1366,46 @@
     ],
     "6": [
       {
+        "roll": "GNP33147",
         "name": "SHRIJA BHOWMIK",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 76
       },
       {
+        "roll": "BLG66073",
+        "name": "ARADHYA SARKAR",
+        "school": "BALURGHAT GIRLS HIGH SCHOOL",
+        "total": 76
+      },
+      {
+        "roll": "NBZ75092",
         "name": "MOKTAR SARKAR",
         "school": "NAYABAZAR HIGH SCHOOL (H.S)",
         "total": 76
       }
     ],
     "7": [
+      
       {
-        "name": "ARADHYA SARKAR",
-        "school": "BALURGHAT GIRLS HIGH SCHOOL",
-        "total": 75
-      },
-      {
+        "roll": "GPG12282",
         "name": "SOUMYAJEET DATTA",
         "school": "GOPALGANJ RAGHUNATH HIGH SCHOOL",
         "total": 75
       },
       {
+        "roll": "KSM38168",
         "name": "SADIYA IKBAL",
         "school": "KUSHMANDI HIGH SCHOOL (H.S)",
         "total": 75
       },
       {
+        "roll": "NBZ75089",
         "name": "EESHAN DAS",
         "school": "NAYABAZAR HIGH SCHOOL (H.S)",
         "total": 75
       },
       {
+        "roll": "SYP45059",
         "name": "KOBITA BARMAN",
         "school": "SAYRAPUR K.M.V HIGH SCHOOL",
         "total": 75
@@ -1178,11 +1413,13 @@
     ],
     "8": [
       {
+        "roll": "BNP44601",
         "name": "ANAN TANZIM",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 74
       },
       {
+        "roll": "KSM38167",
         "name": "RUMPA YESMIN",
         "school": "KUSHMANDI HIGH SCHOOL (H.S)",
         "total": 74
@@ -1190,11 +1427,13 @@
     ],
     "9": [
       {
+        "roll": "GNP33145",
         "name": "RUPANJANA BASAK",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 73
       },
       {
+        "roll": "NBZ75111",
         "name": "TUHIN SARKAR",
         "school": "NAYABAZAR HIGH SCHOOL (H.S)",
         "total": 73
@@ -1202,21 +1441,37 @@
     ],
     "10": [
       {
+        "roll": "BLG66077",
         "name": "MOUREEN REHEMAN",
         "school": "BALURGHAT GIRLS HIGH SCHOOL",
         "total": 72
       },
       {
+        "roll": "BLG66078",
+        "name": "MRINMAYEE DEBNATH",
+        "school": "BADAMAIL L.P HIGH SCHOOL",
+        "total": 72
+      },
+      {
+        "roll": "BNP44607",
+        "name": "GOURAB KUMAR DAS",
+        "school": "BANSHIHARI HIGH SCHOOL",
+        "total": 72
+      },
+      {
+        "roll": "BLG66079",
         "name": "NANDINI SARKAR",
         "school": "BALURGHAT GIRLS HIGH SCHOOL",
         "total": 72
       },
       {
+        "roll": "DLP42144",
         "name": "RUKSHANA KHATUN",
         "school": "DAULATPUR ADARSHA VIDYAPITH",
         "total": 72
       },
       {
+        "roll": "DLP42149",
         "name": "SNEHA YASMIN",
         "school": "DAULATPUR ADARSHA VIDYAPITH",
         "total": 72
@@ -1226,27 +1481,38 @@
   "8": {
     "1": [
       {
+        "roll": "GNP33184",
         "name": "SHRIJIT SARKAR",
         "school": "GANGARAMPUR HIGH SCHOOL",
-        "total": 88
+        "total": 87
+      },
+      {
+        "roll": "GNP33166",
+        "name": "BISHRAMBHA DEBNATH",
+        "school": "GANGARAMPUR HIGH SCHOOL",
+        "total": 87
       }
     ],
     "2": [
       {
+        "roll": "BLG66089",
         "name": "IPSITA MAHANTA",
         "school": "BALURGHAT GIRLS HIGH SCHOOL",
         "total": 86
       }
     ],
     "3": [
+      
       {
-        "name": "BISHRAMBHA DEBNATH",
+        "roll": "GNP33190",
+        "name": "UTSAR ROY",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 85
       }
     ],
     "4": [
       {
+        "roll": "BNP44630",
         "name": "ARGHYA PAL",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 84
@@ -1254,26 +1520,25 @@
     ],
     "5": [
       {
+        "roll": "BLG66097",
         "name": "SULAGNA NANDI",
         "school": "BALURGHAT GIRLS HIGH SCHOOL",
         "total": 83
       },
       {
+        "roll": "GNP33157",
         "name": "AFRIN SARKAR",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 83
       },
       {
+        "roll": "GNP33163",
         "name": "ASHMITA MUKHERJEE",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 83
       },
       {
-        "name": "UTSAR ROY",
-        "school": "GANGARAMPUR HIGH SCHOOL",
-        "total": 83
-      },
-      {
+        "roll": "NBZ75132",
         "name": "SHREYASI DAS",
         "school": "NAYABAZAR HIGH SCHOOL (H.S)",
         "total": 83
@@ -1281,16 +1546,25 @@
     ],
     "6": [
       {
+        "roll": "GNP33165",
         "name": "AYUSHMAN SARKAR",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 82
       },
       {
+        "roll": "GNP33174",
+        "name": "JENIFA RAHAMAN",
+        "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
+        "total": 82
+      },
+      {
+        "roll": "GNP33167",
         "name": "DEBARGHYA ROY",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 82
       },
       {
+        "roll": "GNP33187",
         "name": "SRIJITA ROY",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 82
@@ -1298,58 +1572,70 @@
     ],
     "7": [
       {
+        "roll": "DLP42174",
         "name": "SUMAIA SOHANA",
         "school": "DAULATPUR ADARSHA VIDYAPITH",
         "total": 81
       },
       {
+        "roll": "GNP33161",
         "name": "ARIJIT SAHA",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 81
       },
+      
       {
-        "name": "JENIFA RAHAMAN",
-        "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
-        "total": 81
-      },
-      {
+        "roll": "GNP33182",
         "name": "SAMADRITA GUHA",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 81
       },
       {
+        "roll": "GNP33183",
         "name": "SAMYORAJ CHOWDHURY",
+        "school": "GANGARAMPUR HIGH SCHOOL",
+        "total": 81
+      },
+      {
+        "roll": "GNP33177",
+        "name": "PRATIK SARKAR",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 81
       }
     ],
     "8": [
       {
+        "roll": "BNP44641",
+        "name": "LISAN ALAM ",
+        "school": "BANSHIHARI HIGH SCHOOL",
+        "total": 7808
+      },
+      {
+        "roll": "BNP44627",
         "name": "ANIK SARKAR",
         "school": "BUNIADPUR HIGH SCHOOL",
         "total": 80
       },
       {
+        "roll": "DLP42171",
         "name": "SUBHAM RAM MALLA",
         "school": "SUDARSHANNAGAR P.H.H.V HIGH SCHOOL",
         "total": 80
       },
       {
+        "roll": "GNP33172",
         "name": "HIMADRI SHIKHAR SAHA",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 80
       },
       {
-        "name": "LABIB RAHAMAN",
-        "school": "GANGARAMPUR HIGH SCHOOL",
-        "total": 80
-      },
-      {
+        "roll": "GNP33186",
         "name": "SOUMAJIT PAUL",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 80
       },
       {
+        "roll": "NBZ75136",
         "name": "TAPASNIGDHA DAS",
         "school": "NAYABAZAR HIGH SCHOOL (H.S)",
         "total": 80
@@ -1357,26 +1643,37 @@
     ],
     "9": [
       {
+        "roll": "BLG66093",
         "name": "SAHELI DAS",
         "school": "BALURGHAT GIRLS HIGH SCHOOL",
         "total": 79
       },
       {
+        "roll": "GNP33175",
+        "name": "LABIB RAHAMAN",
+        "school": "GANGARAMPUR HIGH SCHOOL",
+        "total": 79
+      },
+      {
+        "roll": "GNP33168",
         "name": "DEBDIPTA KABIRAJ",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 79
       },
       {
+        "roll": "GNP33170",
         "name": "DEBOJOIT BASAK",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 79
       },
       {
+        "roll": "GNP33176",
         "name": "MADHURIMA SARKAR",
         "school": "THANGAPARA HIGH SCHOOL",
         "total": 79
       },
       {
+        "roll": "GNP33191",
         "name": "ZINAT SARKAR",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 79
@@ -1384,30 +1681,24 @@
     ],
     "10": [
       {
-        "name": "LISAN ALAM ",
-        "school": "BANSHIHARI HIGH SCHOOL",
-        "total": 78
-      },
-      {
+        "roll": "DLP42165",
         "name": "MUKTI MAHATO",
         "school": "SUDARSHANNAGAR P.H.H.V HIGH SCHOOL",
         "total": 78
       },
       {
+        "roll": "GNP33169",
         "name": "DEBJIT BASAK",
         "school": "GANGARAMPUR HIGH SCHOOL",
         "total": 78
-      },
-      {
-        "name": "PRATIK SARKAR",
-        "school": "GANGARAMPUR HIGH SCHOOL",
-        "total": 78
       }
+      
     ]
   },
   "9": {
     "1": [
       {
+        "roll": "BNP44675",
         "name": "MAMPI DAS",
         "school": "BANSHIHARI BALIKA VIDYALAYA",
         "total": 88
@@ -1415,11 +1706,13 @@
     ],
     "2": [
       {
+        "roll": "BNP44679",
         "name": "RAM SUNDAR DEBNATH",
         "school": "KUSHKARI K.B.B.S HIGH SCHOOL",
         "total": 86
       },
       {
+        "roll": "BNP44684",
         "name": "SRINJOY KUNDU",
         "school": "BUNIADPUR HIGH SCHOOL",
         "total": 86
@@ -1427,6 +1720,7 @@
     ],
     "3": [
       {
+        "roll": "BNP44676",
         "name": "OAINDRILA MITRA",
         "school": "BANSHIHARI BALIKA VIDYALAYA",
         "total": 85
@@ -1434,11 +1728,13 @@
     ],
     "4": [
       {
+        "roll": "BNP44678",
         "name": "RABBINA SARKAR",
         "school": "BUNIADPUR HIGH SCHOOL",
         "total": 82
       },
       {
+        "roll": "GNP33203",
         "name": "SAYANTANI BASAK",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 82
@@ -1446,16 +1742,19 @@
     ],
     "5": [
       {
+        "roll": "BNP44667",
         "name": "ANNISHA BEGAM",
         "school": "NINASMA ACADEMY",
         "total": 81
       },
       {
+        "roll": "BNP44668",
         "name": "ANTARA SARKAR",
         "school": "PATH BHABAN",
         "total": 81
       },
       {
+        "roll": "BNP44670",
         "name": "DEBONNITA ROY",
         "school": "BANSHIHARI BALIKA VIDYALAYA",
         "total": 81
@@ -1463,6 +1762,7 @@
     ],
     "6": [
       {
+        "roll": "BNP44680",
         "name": "RINKI SARKAR",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 80
@@ -1470,16 +1770,19 @@
     ],
     "7": [
       {
+        "roll": "BNP44671",
         "name": "FARHAN IKBAL SARKAR",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 79
       },
       {
+        "roll": "GNP33198",
         "name": "NIKITA BARMAN",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 79
       },
       {
+        "roll": "GNP33202",
         "name": "SAMBITA SHIL",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 79
@@ -1487,16 +1790,19 @@
     ],
     "8": [
       {
+        "roll": "BNP44672",
         "name": "JAYDEEP SARKAR",
         "school": "BANSHIHARI HIGH SCHOOL",
         "total": 78
       },
       {
+        "roll": "GNP33195",
         "name": "ANNWESHA PODDAR",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 78
       },
       {
+        "roll": "GNP33197",
         "name": "KOUSHIKA DEBSHARMA",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 78
@@ -1504,16 +1810,19 @@
     ],
     "9": [
       {
+        "roll": "BNP44669",
         "name": "BAISHAKHI MONDAL",
         "school": "PATH BHABAN",
         "total": 77
       },
       {
+        "roll": "BNP44673",
         "name": "KHUSBU KHATUN ",
         "school": "NINASMA ACADEMY",
         "total": 77
       },
       {
+        "roll": "GNP33192",
         "name": "AKANSHA SAHA",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 77
@@ -1521,51 +1830,61 @@
     ],
     "10": [
       {
+        "roll": "BNP44677",
         "name": "PRIYA PAUL",
         "school": "BANSHIHARI BALIKA VIDYALAYA",
         "total": 76
       },
       {
+        "roll": "BNP44682",
         "name": "SAHEMA KHATUN",
         "school": "KUSHKARI K.B.B.S HIGH SCHOOL",
         "total": 76
       },
       {
+        "roll": "BNP44683",
         "name": "SOBNAM MOSTARINA",
         "school": "NINASMA ACADEMY",
         "total": 76
       },
       {
+        "roll": "BNP44686",
         "name": "SUDIPTA BARMAN",
         "school": "KUSHKARI K.B.B.S HIGH SCHOOL",
         "total": 76
       },
       {
+        "roll": "BNP44687",
         "name": "SUPRAVAT KHAN",
         "school": "BUNIADPUR HIGH SCHOOL",
         "total": 76
       },
       {
+        "roll": "BNP44688",
         "name": "TAMANNA REJA",
         "school": "NINASMA ACADEMY",
         "total": 76
       },
       {
+        "roll": "BNP44689",
         "name": "TATHOI ROY",
         "school": "PATH BHABAN",
         "total": 76
       },
       {
+        "roll": "GNP33193",
         "name": "ANAKITA SARKAR",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 76
       },
       {
+        "roll": "GNP33204",
         "name": "SUBARNO SARKAR",
         "school": "THANGAPARA HIGH SCHOOL",
         "total": 76
       },
       {
+        "roll": "TM22076",
         "name": "SUBARNA ORAW",
         "school": "T.P.C.U.M. VIDYALAYA",
         "total": 76
@@ -1575,6 +1894,7 @@
   "10": {
     "1": [
       {
+        "roll": "BNP44691",
         "name": "ANANYA SARKAR",
         "school": "SUDARSHANNAGAR P.H.H.V HIGH SCHOOL",
         "total": 83
@@ -1582,6 +1902,7 @@
     ],
     "2": [
       {
+        "roll": "DLP42203",
         "name": "DEV KUMAR PAUL",
         "school": "DAULATPUR HIGH SCHOOL",
         "total": 81
@@ -1589,11 +1910,13 @@
     ],
     "3": [
       {
+        "roll": "NBZ75147",
         "name": "SAIKAT KARMAKAR",
         "school": "NAYABAZAR HIGH SCHOOL (H.S)",
         "total": 77
       },
       {
+        "roll": "TM22077",
         "name": "ARITRA GHOSH",
         "school": "BARAKAIL HIGH SCHOOL",
         "total": 77
@@ -1601,6 +1924,7 @@
     ],
     "4": [
       {
+        "roll": "DLP42202",
         "name": "DEV KUMAR GUPTA",
         "school": "DAULATPUR HIGH SCHOOL",
         "total": 75
@@ -1608,6 +1932,7 @@
     ],
     "5": [
       {
+        "roll": "SYP45109",
         "name": "PRIYANKA CHAKI",
         "school": "NAYABAZAR HIGH SCHOOL",
         "total": 72
@@ -1615,6 +1940,7 @@
     ],
     "6": [
       {
+        "roll": "SYP45105",
         "name": "MOULI SARKAR",
         "school": "NAYABAZAR HIGH SCHOOL",
         "total": 71
@@ -1622,6 +1948,7 @@
     ],
     "7": [
       {
+        "roll": "DLP42204",
         "name": "DHIRAJ SAHA",
         "school": "DAULATPUR HIGH SCHOOL",
         "total": 69
@@ -1629,6 +1956,7 @@
     ],
     "8": [
       {
+        "roll": "DLP42222",
         "name": "SAFIAH NISAT",
         "school": "DAULATPUR HIGH SCHOOL",
         "total": 68
@@ -1636,11 +1964,13 @@
     ],
     "9": [
       {
+        "roll": "GNP33207",
         "name": "ANANYA GHOSH",
         "school": "GANGARAMPUR GIRLS HIGH SCHOOL",
         "total": 67
       },
       {
+        "roll": "SHL85399",
         "name": "ROWSHAN RAZA ALI",
         "school": "AL AMEEN PROGRESSIVE MISSION",
         "total": 67
@@ -1648,26 +1978,31 @@
     ],
     "10": [
       {
+        "roll": "DLP42218",
         "name": "RIMA PARVIN",
         "school": "DAULATPUR ADARSHA VIDYAPITH",
         "total": 66
       },
       {
+        "roll": "DLP42229",
         "name": "SUMAYA SABNAM",
         "school": "DAULATPUR ADARSHA VIDYAPITH",
         "total": 66
       },
       {
+        "roll": "SHL85400",
         "name": "SAHIL REJA",
         "school": "AL AMEEN PROGRESSIVE MISSION",
         "total": 66
       },
       {
+        "roll": "SHL85402",
         "name": "WASEF REJA",
         "school": "AL AMEEN PROGRESSIVE MISSION",
         "total": 66
       },
       {
+        "roll": "SHL85403",
         "name": "SAIHAN REJA",
         "school": "MAKE FUTURE MODEL SCHOOL",
         "total": 66

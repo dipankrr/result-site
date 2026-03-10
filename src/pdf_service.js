@@ -635,7 +635,7 @@ function getMarksheetBody(student, leaderboardData) {
     if (leaderboardData) {
         const classBoard = leaderboardData[student.CLASS] || {};
         for (const rank in classBoard) {
-            if (classBoard[rank].some(s => s.name === student.NAME && s.school === student.SCHOOL)) {
+            if (classBoard[rank].some(s => s.roll === student.ROLL)) {
                 studentRank = `${rank}`;
                 break;
             }
@@ -835,7 +835,7 @@ function printMarksheetOld(student, leaderboardData) {
     if (leaderboardData && student) {
         const classData = leaderboardData[student.CLASS] || {};
         for (const r in classData) {
-            if (classData[r].some(s => s.name === student.NAME && s.school === student.SCHOOL)) {
+            if (classData[r].some(s => s.roll === student.ROLL)) {
                 rank = `Rank #${r}`;
                 break;
             }

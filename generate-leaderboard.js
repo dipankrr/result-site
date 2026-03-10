@@ -19,6 +19,7 @@ Object.values(studentData).forEach(student => {
         }
         
         leaderboard[className][rank].push({
+            roll: student.ROLL,
             name: student.NAME,
             school: student.SCHOOL,
             total: parseInt(student.TOTAL) || 0
